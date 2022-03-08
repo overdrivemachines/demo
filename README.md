@@ -15,8 +15,16 @@ Rails 7.0.2.2
 - $ rails g scaffold post title:string content:text
   $ rails db:migrate
 - Add simple CSS in application.html.erb
-  `<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">`
--
+  ```html
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  ```
+- Install Action Text:
+ Add `gem 'image_processing', '~> 1.2'` to Gemfile
+ $ rails action_text:install
+ $ bundle
+ $ rails db:migrate
+ Add `has_rich_text :content` to post.rb
+ Add `form.rich_text_area :content` to \_form.html.erb
 
 * System dependencies
 

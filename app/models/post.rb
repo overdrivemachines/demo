@@ -9,5 +9,6 @@
 #  updated_at :datetime         not null
 #
 class Post < ApplicationRecord
-  validates_precense_of :title
+  validates_presence_of :title
+  has_rich_text :content
 end
