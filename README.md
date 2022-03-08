@@ -12,7 +12,8 @@ Rails 7.0.2.2
 # Steps
 
 - $ rails new demo
--
+- $ rails g scaffold post title:string content:text
+  $ rails db:migrate
 
 * System dependencies
 
