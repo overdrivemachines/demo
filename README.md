@@ -14,6 +14,9 @@ Rails 7.0.2.2
 - $ rails new demo
 - $ rails g scaffold post title:string content:text
   $ rails db:migrate
+- Add simple CSS in application.html.erb
+  `<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">`
+-
 
 * System dependencies
 
