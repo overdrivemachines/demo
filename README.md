@@ -11,20 +11,25 @@ Rails 7.0.2.2
 
 # Steps
 
-- $ rails new demo
-- $ rails g scaffold post title:string content:text
-  $ rails db:migrate
-- Add simple CSS in application.html.erb
+- $ rails new demo <br>
+- $ rails g scaffold post title:string content:text <br>
+  $ rails db:migrate <br>
+- Add simple CSS in application.html.erb <br>
   ```html
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   ```
 - Install Action Text:
- Add `gem 'image_processing', '~> 1.2'` to Gemfile
- $ rails action_text:install
- $ bundle
- $ rails db:migrate
- Add `has_rich_text :content` to post.rb
- Add `form.rich_text_area :content` to \_form.html.erb
+ Add `gem 'image_processing', '~> 1.2'` to Gemfile <br>
+ $ rails action_text:install <br>
+ $ bundle <br>
+ $ rails db:migrate <br>
+ Add `has_rich_text :content` to post.rb <br>
+ Add `form.rich_text_area :content` to \_form.html.erb <br>
+
+- Add JavaScript
+  Link: https://www.npmjs.com/package/local-time <br>
+  $ ./bin/importmap pin local-time <br>
+
 
 * System dependencies
 
