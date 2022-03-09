@@ -12,6 +12,7 @@
 #           root GET    /                                                                                                 post#index
 
 Rails.application.routes.draw do
+  resources :comments
   resources :posts
 
   root "post#index"

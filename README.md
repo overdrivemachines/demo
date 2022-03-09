@@ -18,15 +18,15 @@ Rails 7.0.2.2
   ```html
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   ```
-- Install Action Text:
- Add `gem 'image_processing', '~> 1.2'` to Gemfile <br>
- $ rails action_text:install <br>
- $ bundle <br>
- $ rails db:migrate <br>
- Add `has_rich_text :content` to post.rb <br>
- Add `form.rich_text_area :content` to \_form.html.erb <br>
+- Install Action Text <br>
+  Add `gem 'image_processing', '~> 1.2'` to Gemfile <br>
+  $ rails action_text:install <br>
+  $ bundle <br>
+  $ rails db:migrate <br>
+  Add `has_rich_text :content` to post.rb <br>
+  Add `form.rich_text_area :content` to \_form.html.erb <br>
 
-- Add JavaScript
+- Add JavaScript <br>
   Link: https://www.npmjs.com/package/local-time <br>
   $ ./bin/importmap pin local-time <br>
   In `application.js` add the following lines:
@@ -38,10 +38,12 @@ Rails 7.0.2.2
   ```erb
   Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
   ```
-- Download JavaScript
+- Download JavaScript <br>
   $ ./bin/importmap pin local-time --download <br>
   It will download it to /vendor/javascript/local-time.js
 
+- Add Comment <br>
+  $ rails g resource comment post:references content:text <br>
 
 * System dependencies
 
