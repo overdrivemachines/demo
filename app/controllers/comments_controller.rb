@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   before_action :set_post
 
   def create
-    Comment.create! params.required(:comment).permit(:content)
+    @post.comments.create! params.required(:comment).permit(:content)
     redirect_to @post
   end
 
