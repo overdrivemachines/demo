@@ -20,8 +20,10 @@
 #           root GET    /                                                                                                 post#index
 
 Rails.application.routes.draw do
-  resources :comments
-  resources :posts
 
-  root "post#index"
+  resources :posts do
+    resources :comments
+  end
+
+  root "posts#index"
 end
