@@ -45,6 +45,9 @@ Rails 7.0.2.2
 - Add Comment <br>
   $ rails g resource comment post:references content:text <br>
 
+- Install Action Mail <br>
+$ rails g mailer comments submitted
+
 * System dependencies
 
 * Configuration
