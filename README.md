@@ -29,7 +29,15 @@ Rails 7.0.2.2
 - Add JavaScript
   Link: https://www.npmjs.com/package/local-time <br>
   $ ./bin/importmap pin local-time <br>
-
+  In `application.js` add the following lines:
+  ```js
+  import LocalTime from "local-time"
+  LocalTime.start()
+  ```
+  In `_post.html.erb` add the following lines:
+  ```erb
+  Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
+  ```
 
 * System dependencies
 
