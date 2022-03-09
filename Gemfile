@@ -22,6 +22,7 @@ end
 group :development do
   gem "web-console"
   gem "annotate"
+  gem "rails-erd"
 end
 
 group :test do
