@@ -38,6 +38,10 @@ Rails 7.0.2.2
   ```erb
   Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
   ```
+- Download JavaScript
+  $ ./bin/importmap pin local-time --download <br>
+  It will download it to /vendor/javascript/local-time.js
+
 
 * System dependencies
 
