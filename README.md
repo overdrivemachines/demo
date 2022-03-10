@@ -53,6 +53,17 @@ $ rails g mailer comments submitted <br>
   Add `broadcasts_to :post` to comment.rb <br>
   Add `<%= turbo_stream_from @post %>` to app/views/posts/show.html.erb <br>
 
+- Test <br>
+$ rails test <br>
+  Fix errors
+
+- Production <br>
+  Install PostgreSQL client package: <br>
+  $ sudo apt install libpq-dev <br>
+  Change DB from SQLite to PostgreSQL: <br>
+  $ rails db:system:change --to=postgresql <br>
+  $ bundle <br>
+
 * System dependencies
 
 * Configuration
