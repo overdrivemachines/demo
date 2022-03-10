@@ -10,4 +10,5 @@
 #
 class Comment < ApplicationRecord
   belongs_to :post
+  broadcasts_to :post # broadcasts creates, updates and destroys
 end

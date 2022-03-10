@@ -46,7 +46,12 @@ Rails 7.0.2.2
   $ rails g resource comment post:references content:text <br>
 
 - Install Action Mail <br>
-$ rails g mailer comments submitted
+$ rails g mailer comments submitted <br>
+  Edit app/mailers/comments_mailer.rb, app/views/comments_mailer/submitted.html.erb and app/views/comments_mailer/submitted.text.erb <br>
+
+- Hotwire <br>
+  Add `broadcasts_to :post` to comment.rb <br>
+  Add `<%= turbo_stream_from @post %>` to app/views/posts/show.html.erb <br>
 
 * System dependencies
 
