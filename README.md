@@ -63,6 +63,15 @@ $ rails test <br>
   Change DB from SQLite to PostgreSQL: <br>
   $ rails db:system:change --to=postgresql <br>
   $ bundle <br>
+  Install Heroku: <br>
+  $ sudo snap install heroku --classic <br>
+  $ heroku login <br>
+  Create Heroku App: <br>
+  $ heroku create <br>
+  $ git push heroku main <br>
+  $ heroku run rake db:migrate <br>
+  $ heroku addons:create heroku-redis:hobby-dev -a dry-lake-62008 <br>
+  $ heroku open
 
 * System dependencies
 
